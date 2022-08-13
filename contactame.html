@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Plantilla básica de Bootstrap </title>
+ 
+    <!-- CSS de Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="bootstrap/js/bootstrap.js" type="text/JavaScript"></script>
+    <link href="miestilo.css" rel="stylesheet" media="screen">
+    <!-- librerías opcionales que activan el soporte de HTML5 para IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+     
+      <!-- Haciendo uso de Fontawesome para el uso de iconos-->
+      <!--<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+      <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">-->
+      <!-- CSS -->
+      <!--<link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css"-->
+      <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+      <!-- -->
+      
+    <script type="text/javascript">
+        function iniciar(){
+            var nombre=document.getElementById("nombre");
+            var apellido=document.getElementById("apellido");
+            var telefono=document.getElementById("telefono");
+            var email=document.getElementById("email");
+            var consulta=document.getElementById("consulta");
+            nombre.addEventListener("input",corroborar);
+            apellido.addEventListener("input",corroborar);
+            telefono.addEventListener("input",corroborar);
+            email.addEventListener("input",corroborar);
+            consulta.addEventListener("input",corroborar);
+            
+            corroborar();
+            document.formulario_turnos.addEventListener("invalid",
+            validacion, true);
+            document.getElementById("enviar").addEventListener("click",
+            enviar, false);
+            document.formulario_turnos.addEventListener("input", controlar,
+            false);
+        }
+        function corroborar(){
+            if (nombre.value == '' || nombre.value == null || nombre.value.length == 0 || /^\s+$/.test(nombre.value)) {
+            nombre.setCustomValidity("ERROR en NOMBRE: Debe ingresar un nombre válido.");
+            }else{
+                nombre.setCustomValidity('');
+            }
+            if (apellido.value == '' || apellido.value == null || apellido.value.length == 0 || /^\s+$/.test(apellido)) {
+            apellido.setCustomValidity("ERROR en Apellido: Debe ingresar un apellido válido.");
+            }else{
+                apellido.setCustomValidity('');
+            }
+            if (telefono.value == '') {
+            telefono.setCustomValidity("ERROR en Telefono: Debe ingresar un número de teléfono válido.");
+            }else{
+                telefono.setCustomValidity('');
+            }
+            if (email.value == '') {
+            email.setCustomValidity("ERROR en email: Debe ingresar un email válido.");
+            }else{
+                email.setCustomValidity('');
+            }
+            if (consulta.value == '') {
+            consulta.setCustomValidity("ERROR!!! Debe ingresar su consulta.");
+            }else{
+                consulta.setCustomValidity('');
+            }
+        }
+        function validacion(e){
+        var elemento=e.target;
+        elemento.style.background='#FFDDDD';
+        }
+        function enviar(){
+        var valido=document.formulario_turnos.checkValidity();
+        if(valido){
+        document.formulario_turnos.submit();
+        }
+        }
+        function controlar(e){
+        var elemento=e.target;
+        if(elemento.validity.valid){
+        elemento.style.background='#FFFFFF';
+        }else{
+        elemento.style.background='#FFDDDD';
+        }
+        }
+        window.addEventListener("load", iniciar, false);
+        
+</script>
+  </head>
+  <body>
+    <!-- Librería jQuery requerida por los plugins de JavaScript -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+ 
+    <!-- Todos los plugins JavaScript de Bootstrap (también puedes
+         incluir archivos JavaScript individuales de los únicos
+         plugins que utilices) -->
+      <div class="container">
+        <header class="row">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-default navbar navbar-default navbar-fixed-top" role="navigation">
+                <!-- El logotipo y el icono que despliega el menú se agrupan
+                para mostrarlos mejor en los dispositivos móviles -->
+                    <div class="navbar-header azul">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Desplegar navegación</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="inicio.html" id="navbar_colorletra">ALEJANDRO FERNANDEZ</a>
+                    </div>
+ 
+                <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+                otro elemento que se pueda ocultar al minimizar la barra -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse azul">
+                        <ul class="nav navbar-nav">
+                            <li><a class="azul" href="inicio.html">Inicio</a></li>
+                            <li><a href="novedades.html">Novedades</a></li>
+                            <li><a href="biografia.html">Biografía</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Galería 
+                                <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="imagenes.html">Imagenes</a></li>
+                                    <li><a href="video.html">Videos</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="discografia.html">Discografía</a></li>
+                            <li class="active"><a href="contactame.html">Contacto</a></li>
+                        </ul>
+ <!-- Haciendo uso de los iconos de FontAwesome -->
+                        <div class="nav navbar-nav navbar-right">
+                            <div class="btn-group btn-right">
+                                <a class="btn" href="https://www.facebook.com/alejandrofernandezoficial"><i class="icon-facebook"></i></a>
+                                <a class="btn" href="https://twitter.com/alexoficial"><i class="icon-twitter-sign"></i></a>
+                                <a class="btn" href="https://www.instagram.com/alexoficial/"><i class="icon-instagram"></i></a>
+                                <a class="btn" href="https://www.youtube.com/user/alejandrofernandez"><i class="icon-youtube"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="row" id="imagenes">
+            <div class="col-lg-4 col-md-4">
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4"><h2 class="letragris"><em>Contáctame</em></h2></div>
+            <div class="col-lg-4 col-md-4">
+            </div>
+        </section>
+        
+      
+      <section class="row" id="cajaform">
+    <div class="col-sm-8 col-md-8 col-lg-8">
+      </div>
+          <div class="col-lg-4 col-md-4" id="contenedor3">
+                <form form-role="form" action="" method="" name="formulario_turnos" onsubmit="return validacion()">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" pattern="[A-Za-z]{2,}+[A-Za-z]{2,}" class="form-control input-sm" id="nombre" placeholder="Ingrese Nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" class="form-control input-sm" id="apellido" placeholder="Ingrese Apellido">
+                    </div>
+                    <div class="form-group">
+                        <label for="tel">Telefono</label>
+                        <input type="text" pattern="\d{10}" class="form-control input-sm" id="telefono" placeholder="Ingrese Telefono">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" pattern="[A-Za-z]{2,}+[A-Za-z]{2,}" class="form-control input-sm" id="email" placeholder="Ingrese email">
+                    </div>
+                    <div class="form-group">
+                        <label for="textarea">Consulta</label>
+                        <textarea id="consulta" rows="5" cols="33" class="form-control input-sm" id="textarea" placeholder="Introduduzca su consulta..."></textarea>
+                    </div>
+  <button type="submit" id="enviar" class="btn btn-default">Enviar</button>
+  <button type="reset" id="borrar" class="btn btn-default">Borrar</button>
+</form><br/><br/>
+            </div>
+            <!--<div class="col-lg-4 col-md-4">
+            </div>-->
+      </section>
+          
+          
+          
+          
+          
+        
+
+        
+                  
+        <footer class="row">
+            <div class="col-lg-12">
+                <p class="text-center">TODOS LOS DERECHOS RESERVADOS 2016 © JUMARU25.COM | POLITICA DE PRIVACIDAD | AVISO LEGAL</p>
+            </div>
+        </footer>
+      </div>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
+

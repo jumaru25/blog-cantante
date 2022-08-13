@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Plantilla básica de Bootstrap </title>
+ 
+    <!-- CSS de Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="bootstrap/js/bootstrap.js" type="text/JavaScript"></script>
+    <link href="miestilo.css" rel="stylesheet" media="screen">
+    <!-- librerías opcionales que activan el soporte de HTML5 para IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+     
+      <!-- Haciendo uso de Fontawesome para el uso de iconos-->
+      <!--<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+      <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">-->
+      <!-- CSS -->
+      <!--<link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css"-->
+      <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+      <!-- -->
+      
+  </head>
+  <body>
+    <!-- Librería jQuery requerida por los plugins de JavaScript -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+ 
+    <!-- Todos los plugins JavaScript de Bootstrap (también puedes
+         incluir archivos JavaScript individuales de los únicos
+         plugins que utilices) -->
+      <div class="container">
+        <header class="row">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-default navbar navbar-default navbar-fixed-top" role="navigation">
+                <!-- El logotipo y el icono que despliega el menú se agrupan
+                para mostrarlos mejor en los dispositivos móviles -->
+                    <div class="navbar-header azul">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Desplegar navegación</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="inicio.html" id="navbar_colorletra">ALEJANDRO FERNANDEZ</a>
+                    </div>
+ 
+                <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+                otro elemento que se pueda ocultar al minimizar la barra -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse azul">
+                        <ul class="nav navbar-nav">
+                            <li><a class="azul" href="inicio.html">Inicio</a></li>
+                            <li><a href="novedades.html">Novedades</a></li>
+                            <li class="active"><a href="biografia.html">Biografía</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Galería 
+                                <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="imagenes.html">Imagenes</a></li>
+                                    <li><a href="video.html">Videos</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="discografia.html">Discografía</a></li>
+                            <li><a href="contactame.html">Contacto</a></li>
+                        </ul>
+ <!-- Haciendo uso de los iconos de FontAwesome -->
+                        <div class="nav navbar-nav navbar-right">
+                            <div class="btn-group btn-right">
+                                <a class="btn" href="https://www.facebook.com/alejandrofernandezoficial"><i class="icon-facebook"></i></a>
+                                <a class="btn" href="https://twitter.com/alexoficial"><i class="icon-twitter-sign"></i></a>
+                                <a class="btn" href="https://www.instagram.com/alexoficial/"><i class="icon-instagram"></i></a>
+                                <a class="btn" href="https://www.youtube.com/user/alejandrofernandez"><i class="icon-youtube"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </header>
+          
+          
+        <section class="row padprincipal fondogris" id="caja2">
+            <div class="col-sm-6 col-md-6 col-lg-6 fondogris text-right">
+                <img data-src="holder.js/100%x180" src="imagenes/bio1.png"alt="...">
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <br/><br/><br/><p>Portar un traje de charro no es para cualquiera. Símbolo del criollo mexicano, el atuendo requiere aplomo, galanura y actitud. Vestir de charro es arroparse con la identidad de un pueblo noble y apasionado, que lo mismo canta su alegría que su dolor. A esa historia pertenece Alejandro Fernández, artista de pura cepa y moderno representante de una herencia de charros cantores, auténticos embajadores de la identidad mexicana, en la que han destacado figuras como Pedro Infante, Jorge Negrete, Javier Solís y Vicente en la Ciudad de México en 1971, Alejandro Fernández creció rodeado de la tradición musical de su país. Desde chico aprendió a valorar la lealtad no sólo por la patria sino por sus más antiguas y admirables tradiciones.</p>
+            </div>        
+        </section>
+          
+          <section class="row fondogris">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <br/><br/><br/><p>Dotado de una voz excepcional, el niño parecía elegido para conquistar los escenarios del planeta gracias a su interpretación personalísima de la música mexicana. Pero no siempre fue así. Apenas a los ocho años de edad, al tener su primera oportunidad de actuar frente al público, Alejandro olvidó la letra de una melodía mientras cantaba junto a su padre, el imponente Vicente Fernández, en televisión. No fue una experiencia grata. Alejandro se dedico a otras cosas. Aunque llevaba “la música en las venas”, se alejó de los escenarios. Por años fue sólo “un chavo normal, un poquito introvertido” que optó, ya entrada la adolescencia, por su otro gran amor: la arquitectura. Amaba la universidad y a sus amigos, que aún ahora tienen un papel fundamental en su vida. Pero el destino es el destino,Y el de Alejandro Fernández era la música.</p>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 fondogris text-left">
+                <img data-src="holder.js/100%x180" src="imagenes/bio2.png"alt="...">
+            </div>  
+        </section>
+          
+        <section class="row fondogris">
+            <div class="col-sm-6 col-md-6 col-lg-6 fondogris text-right">
+                <img data-src="holder.js/100%x180" src="imagenes/bio3.png"alt="...">
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <br/><br/><br/><p>La vida tranquila del estudiante de arquitectura cambió para siempre por iniciativa de Vicente Fernández. El padre de Alejandro, siempre atento al notable talento de su “potrillo”, lo invitó a grabar un dueto. Alejandro acababa de cumplir los 21 años de edad cuando el mundo entero escuchó por primera vez esa voz dulce y romántica que lo llevaría al estrellato casi de inmediato. La canción se llamaba “Amor de los dos”, de Gilberto Parra. Desde el primer par de notas quedó claro de qué estaba hecho aquel muchacho que, después de todo, había nacido para cantar. El dueto de los Fernández fue un éxito rotundo. Sería el principio de una leyenda.</p>
+            </div>     
+        </section>
+          
+        <section class="row fondogris">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <br/><br/><br/><p>Después de aquel debut extraordinario, Alejandro recibió una invitación para grabar su primera producción como solista. El estilo fresco del joven Fernández llevó al disco a los primeros lugares de ventas. El México de principio de los noventa era testigo, así, del surgimiento del siguiente gran charro cantor, heredero de una de las más nobles dinastías de las artes mexicanas. Al poco tiempo, Alejandro decidió dejar de lado la arquitectura de manera definitiva. Grabó “Piel de Niña”, su segunda producción, que se vendió como pan caliente. Pero aquello sería sólo el principio. En 1994, gracias a una canción casi predestinada para su voz, Alejandro se convertiría en el cantante sensación no sólo de su país sino de Hispanoamérica. La melodía, que está ya entre las grandes de la historia de la música mexicana, se llamaba “Como quien pierde una estrella”.</p>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 fondogris text-left">
+                <img data-src="holder.js/100%x180" src="imagenes/bio4.png"alt="...">
+            </div>  
+        </section>
+          
+          <section class="row fondogris">
+            <div class="col-sm-6 col-md-6 col-lg-6 fondogris text-right">
+                <img data-src="holder.js/100%x180" src="imagenes/bio5.png"alt="...">
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <br/><br/><br/><p>De la inspiración de Humberto Estrada, la canción conquistó el favor de los jóvenes mexicanos, quienes redescubrieron la dulzura y la intensidad de la música de su patria. A partir de entonces, Alejandro Fernández sería protagonista de muchas noches de serenatas mexicanas. Pero Alejandro siempre ha estado lleno de sorpresas. Muchos podrían haberse dormido en sus laureles, cómodos por haber encontrado un nicho tan exclusivo como intocable. ¿Quién, después de todo, puede cantar ranchero como Alejandro? Pero un charro no se conforma con lo que tiene.</p>
+            </div>     
+        </section>
+        
+        <section class="row fondogris">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <br/><br/><br/><p>En 1997, Alejandro dio un salto soñado por él y criticado por muchos: complementaría su carrera de ranchero con una producción enfocada a la música pop. En su momento, muchos pensaron que no lo lograría. “Es muy arriesgado”, le dijeron. Pero Alejandro no hizo caso. Obsesivo de la colaboración fructífera, llamó a uno de los grandes de la música en español: el productor Emilio Estefan. De la mano de Estefan, Alejandro rompería una barrera que parecía impensable: la transformación de una voz vernácula en la de un cantante moderno como pocos. “Me Estoy Enamorando” vendería 3 millones de copias alrededor del mundo.</p>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 fondogris text-left">
+                <img data-src="holder.js/100%x180" src="imagenes/bio6.png"alt="...">
+            </div>  
+        </section>  
+          
+          <section class="row fondogris">
+            <div class="col-sm-6 col-md-6 col-lg-6 fondogris text-right">
+                <img data-src="holder.js/100%x180" src="imagenes/bio7.png"alt="...">
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <br/><br/><br/><p>Puesto el alma en cada disco que ha ofrecido a su vastísimo público. Cada uno es un reflejo de una época de su vida. Si uno los escucha con cuidado comprende quién ha sido este hombre nacido entre canciones que decidió, hace años ya, dedicarle la vida a la música. Con “Confidencias”, Alejandro le da la bienvenida a sus 40 años. Producido por el legendario Phil Ramone “Confidencias” es un disco que recuerda las melodías que acompañaron la infancia de Alejandro, no solo en la voz de su padre sino en la de su madre, que le enseñó muchas de las canciones que hoy, tres décadas más tarde, Alejandro hace suyas una vez más. Pero no solo eso. Detrás de “Confidencias” hay un secreto: el proyecto de Alejandro de regresar a la tradición de las grandes baladas hispanoamericanas de amor y desamor y presentarlas, con íntima frescura, a un nuevo público.</p>
+            </div>     
+        </section>
+          
+        <section class="row fondogris">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <br/><br/><br/><p>Dotado de una voz excepcional, el niño parecía elegido para conquistar los escenarios del planeta gracias a su interpretación personalísima de la música mexicana. Pero no siempre fue así. Apenas a los ocho años de edad, al tener su primera oportunidad de actuar frente al público, Alejandro olvidó la letra de una melodía mientras cantaba junto a su padre, el imponente Vicente Fernández, en televisión. No fue una experiencia grata. Alejandro se dedico a otras cosas. Aunque llevaba “la música en las venas”, se alejó de los escenarios. Por años fue sólo “un chavo normal, un poquito introvertido” que optó, ya entrada la adolescencia, por su otro gran amor: la arquitectura. Amaba la universidad y a sus amigos, que aún ahora tienen un papel fundamental en su vida. Pero el destino es el destino,Y el de Alejandro Fernández era la música.</p>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 fondogris text-left">
+                <img data-src="holder.js/100%x180" src="imagenes/bio8.png"alt="...">
+            </div>  
+        </section>   
+        
+                  
+        <footer class="row">
+            <div class="col-lg-12">
+                <p class="text-center">TODOS LOS DERECHOS RESERVADOS 2016 © JUMARU25.COM | POLITICA DE PRIVACIDAD | AVISO LEGAL</p>
+            </div>
+        </footer>
+      </div>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
+

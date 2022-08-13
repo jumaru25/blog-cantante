@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Plantilla básica de Bootstrap </title>
+ 
+    <!-- CSS de Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="bootstrap/js/bootstrap.js" type="text/JavaScript"></script>
+    <link href="miestilo.css" rel="stylesheet" media="screen">
+    <!-- librerías opcionales que activan el soporte de HTML5 para IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+     
+      <!-- Haciendo uso de Fontawesome para el uso de iconos-->
+      <!--<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+      <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">-->
+      <!-- CSS -->
+      <!--<link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css"-->
+      <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+      <!-- -->
+      
+  </head>
+  <body>
+    <!-- Librería jQuery requerida por los plugins de JavaScript -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+ 
+    <!-- Todos los plugins JavaScript de Bootstrap (también puedes
+         incluir archivos JavaScript individuales de los únicos
+         plugins que utilices) -->
+      <div class="container">
+        <header class="row">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-default navbar navbar-default navbar-fixed-top" role="navigation">
+                <!-- El logotipo y el icono que despliega el menú se agrupan
+                para mostrarlos mejor en los dispositivos móviles -->
+                    <div class="navbar-header azul">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Desplegar navegación</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="inicio.html" id="navbar_colorletra">ALEJANDRO FERNANDEZ</a>
+                    </div>
+ 
+                <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+                otro elemento que se pueda ocultar al minimizar la barra -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse azul">
+                        <ul class="nav navbar-nav">
+                            <li><a class="azul" href="inicio.html">Inicio</a></li>
+                            <li class="active"><a href="novedades.html">Novedades</a></li>
+                            <li><a href="biografia.html">Biografía</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Galería 
+                                <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="imagenes.html">Imagenes</a></li>
+                                    <li><a href="video.html">Videos</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="discografia.html">Discografía</a></li>
+                            <li><a href="contactame.html">Contacto</a></li>
+                        </ul>
+ <!-- Haciendo uso de los iconos de FontAwesome -->
+                        <div class="nav navbar-nav navbar-right">
+                            <div class="btn-group btn-right">
+                                <a class="btn" href="https://www.facebook.com/alejandrofernandezoficial"><i class="icon-facebook"></i></a>
+                                <a class="btn" href="https://twitter.com/alexoficial"><i class="icon-twitter-sign"></i></a>
+                                <a class="btn" href="https://www.instagram.com/alexoficial/"><i class="icon-instagram"></i></a>
+                                <a class="btn" href="https://www.youtube.com/user/alejandrofernandez"><i class="icon-youtube"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </header>
+          
+        <section class="row padprincipal" id="caja2">
+        <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="thumbnail fondogris">
+                <a href="#"><img data-src="holder.js/100%x180" src="imagenes/portadadisc1.png"alt="..."></a>
+                <div class="caption">
+                    <p class="letraroja"><em>17-01-2017</em></p>
+                    <h5><strong>ALEJANDRO FERNANDEZ AGOTA ENTRADAS EN LA FERIA ESTATAL DE LEON, GUANAJUATO, ANUNCIA UN CUARTO CONCIERTO Y PROGRAMA NUEVAS FECHAS EN TEXCOCO, ACAPULCO Y MORELIA</strong></h5>
+                    <p>Gran éxito de venta de la gira ‘Confidencias Reales’ Tras anunciar con gran acogida en diciembre las primeras fechas de la nueva gira ‘Conf...</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="thumbnail fondogris">
+                <a href="#"><img data-src="holder.js/100%x180" src="imagenes/alejandro2.png"alt="..."></a>
+                <div class="caption">
+                    <p class="letraroja"><em>15-01-2017</em></p>
+                    <h5><strong>ALEJANDRO FERNANDEZ ACTUARÁ ESTE MIÉRCOLES EN LA FINAL DE ‘LA VOZ’</strong></h5>
+                    <p>Alejandro Fernández será uno de los protagonistas en la gala final de ‘La Voz’. Tras la gran acogida de su nuevo álbum ‘Confidencias Reales‘, el...</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="thumbnail fondogris">
+                <a href="#"><img data-src="holder.js/100%x180" src="imagenes/alejandrofernandez.png"alt="..."></a>
+                <div class="caption">
+                    <p class="letraroja"><em>27-12-2016</em></p>
+                    <h5><strong>ALEJANDRO FERNANDEZ VIAJA A ESPAÑA Y ARGENTINA PARA PROMOCIONAR “CONFIDENCIAS REALES”</strong></h5>
+                    <p>Tras varias semanas de promoción por Estados Unidos, ALEJANDRO F. viaja esta semana a España y Argentina para presentar su nuevo álbum “Confidencias Reales” a los principales medios de comunicación. El pasado viernes se puso a la venta “Confidencias Reales”, entrando directamente en el Nº1 de iTunes...</p>
+                </div>
+            </div>
+        </div>
+            </section>
+          
+          
+            <section class="row" id="caja2">
+            <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="thumbnail fondogris">
+                <a href="#"><img data-src="holder.js/100%x180" src="imagenes/alejandro10.png"alt="..."></a>
+                <div class="caption">
+                    <p class="letraroja"><em>25-12-2016</em></p>
+                    <h5><strong>ALEJANDRO FERNANDEZ AGOTA ENTRADAS EN LA FERIA ESTATAL DE LEON, GUANAJUATO, ANUNCIA UN CUARTO CONCIERTO Y PROGRAMA NUEVAS FECHAS EN TEXCOCO, ACAPULCO Y MORELIA</strong></h5>
+                    <p>Gran éxito de venta de la gira ‘Confidencias Reales’ Tras anunciar con gran acogida en diciembre las primeras fechas de la nueva gira ‘Conf...</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="thumbnail fondogris">
+                <a href="#"><img data-src="holder.js/100%x180" src="imagenes/alejandro11.png"alt="..."></a>
+                <div class="caption">
+                    <p class="letraroja"><em>15-12-2016</em></p>
+                    <h5><strong>ALEJANDRO FERNANDEZ ACTUARÁ ESTE MIÉRCOLES EN LA FINAL DE ‘LA VOZ’</strong></h5>
+                    <p>Alejandro Fernández será uno de los protagonistas en la gala final de ‘La Voz’. Tras la gran acogida de su nuevo álbum ‘Confidencias Reales‘, el...</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="thumbnail fondogris">
+                <a href="#"><img data-src="holder.js/100%x180" src="imagenes/alejandro9.png"alt="..."></a>
+                <div class="caption">
+                    <p class="letraroja"><em>30-11-2016</em></p>
+                    <h5><strong>ALEJANDRO FERNANDEZ VIAJA A ESPAÑA Y ARGENTINA PARA PROMOCIONAR “CONFIDENCIAS REALES”</strong></h5>
+                    <p>Tras varias semanas de promoción por Estados Unidos, ALEJANDRO F. viaja esta semana a España y Argentina para presentar su nuevo álbum “Confidencias Reales” a los principales medios de comunicación. El pasado viernes se puso a la venta “Confidencias Reales”, entrando directamente en el Nº1 de iTunes...</p>
+                </div>
+            </div>
+        </div>
+            
+        </section>
+          
+                  
+        <footer class="row">
+            <div class="col-lg-12">
+                <p class="text-center">TODOS LOS DERECHOS RESERVADOS 2016 © JUMARU25.COM | POLITICA DE PRIVACIDAD | AVISO LEGAL</p>
+            </div>
+        </footer>
+      </div>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
+

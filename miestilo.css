@@ -1,0 +1,185 @@
+body {
+    background:-webkit-linear-gradient(left, #0B0B3B,#0B0B3B);
+    background:-ms-linear-gradient(left, #04B404,#40FF00);
+    background:-moz-linear-gradient(left, #04B404,#40FF00);
+    box-shadow: 0px 0px 20px rgba(11,11,59,0.5);
+    -webkit-box-shadow: 0px 0px 20px rgba(11,11,59,0.5);
+    -moz-box-shadow: 0px 0px 20px rgba(11,11,59,0.5);
+    -ms-box-shadow: 0px 0px 20px rgba(11,11,59,0.5);
+}
+
+header {
+    background-color: #FF8000;
+}
+
+#navbar_colorletra {
+    color: #FF0202;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.azul {
+    background-color: #0B0B3B;
+}
+#caja1 {
+    background-image:url(imagenes/alejandro3.png);
+    background-size: contain;
+    background-color: #FF00FF;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    border-bottom: 5px;
+    border-bottom-color: #E6E6E6;
+    border-bottom-style:double;
+}
+
+#caja1_1 {
+    background-image: url(imagenes/alejandro4.jpg);
+    width: 404px;
+    height: 579px;
+    padding-top: 250px;
+    text-align: center;
+    color: #ffffff;
+    font-weight:normal;
+}
+
+.cabecera {
+font-size: 65px;
+color: #ffffff;
+padding-left: 10px;
+}
+
+.textosubrayado {
+    text-decoration: underline;
+}
+
+.intensidad {
+    font-weight: 600;
+}
+
+#caja1_2 {
+    border-bottom-width: medium;
+    border-bottom-color: #E6E6E6;
+    border-bottom-style: solid;
+    text-align: center;
+    width: 404px;
+    color: #FFFFFF;
+}
+
+#btn_fecha {
+    border-radius: 15px;
+    background-color: #FD0202;
+    color: #FFFFFF;
+}
+
+#caja2 {
+    padding-top: 10px;
+}
+
+.bordeinferior {
+    border-bottom: 5px;
+    border-bottom-color: #E6E6E6;
+    border-bottom-style:double;
+    padding-bottom: 5px;
+}
+
+.letragris {
+    color: #E6E6E6;
+}
+.letrablanca {
+    color: #ffffff;
+}
+
+.fondogris {
+    background-color: #E6E6E6;
+}
+
+.letraroja {
+    color: #FF0202;
+}
+
+/*.fondorojo {
+    background-color: #FF0202;
+    padding: 15px;
+    font-size: 20px;*/
+    
+
+#panelconciertos {
+    font-size: 25px;
+    margin-right: 65px;
+}
+
+#panelconciertos strong{
+    background-color: #FF0202;
+    padding: 15px;
+    margin-right: 10px;
+    color:#ffffff;
+}
+
+#panelconciertos small {
+    color: #FF0202;
+}
+
+#cajaentradas {
+    margin-top: 64px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#cajaentradas a img {
+    margin-bottom: 5px;
+}
+
+.padprincipal {
+    margin-top: 50px;
+}
+#imagenes {
+    padding-top: 50px;
+    font-size: 45px;
+    color: #ffffff;
+}
+#caja3 {
+    background-color: #E6E6E6;
+}
+#contenedor1{
+    background-color: #5FB404;
+    padding-bottom: 68px;
+    padding-top: 0px;
+}
+#contenedor2{
+    background-color: #04B404;
+    padding-bottom: 159px;
+    padding-top: 159px;
+    border-left: 5px solid #BDBDBD;
+    border-right: 5px solid #BDBDBD;
+}
+#contenedor3{
+    background-color: #E6E6E6;
+    border-radius: 20px;
+    /*padding-bottom: 143px;
+    padding-top: 143px;*/
+}
+
+#cajaform {
+    background-image: url(imagenes/alejandro6.png);
+    background-size:cover;
+    padding-top: 10px;
+}
+#cajavideo {
+    height: 520px;
+}
+footer {
+    /*background-color: #0174DF;*/
+    padding-bottom: 12px;
+    padding-top: 12px;
+    color: #E6E6E6;
+    /*border: 5px solid #BDBDBD;
+    border-top: 0px;*/
+}
+#pie {
+    margin-top: 190px;
+}
+/*#navegacion {
+      width: 700px;
+      margin-right: auto;
+      margin-left: auto;
+    }*/
